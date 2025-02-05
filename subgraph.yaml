@@ -47,7 +47,7 @@ dataSources:
     source:
       abi: PositionManager
       address: "0x7c5f5a4bbd8fd63184577525326123b519429bdc"
-      startBlock: 25350988
+      startBlock: 25350993
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
