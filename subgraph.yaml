@@ -7,34 +7,34 @@ features:
   - nonFatalErrors
   - grafting
 dataSources:
-  # - kind: ethereum/contract
-  #   name: PoolManager
-  #   network: base
-  #   source:
-  #     abi: PoolManager
-  #     address: "0x498581ff718922c3f8e6a244956af099b2652b2b"
-  #     startBlock: 25350988
-  #   mapping:
-  #     kind: ethereum/events
-  #     apiVersion: 0.0.7
-  #     language: wasm/assemblyscript
-  #     file: ./src/mappings/index.ts
-  #     entities:
-  #       - Pool
-  #       - Token
-  #     abis:
-  #       - name: ERC20
-  #         file: ./abis/ERC20.json
-  #       - name: ERC20SymbolBytes
-  #         file: ./abis/ERC20SymbolBytes.json
-  #       - name: ERC20NameBytes
-  #         file: ./abis/ERC20NameBytes.json
-  #       - name: PoolManager
-  #         file: ./abis/PoolManager.json
-  #     eventHandlers:
-  #       - event: Initialize(indexed bytes32,indexed address,indexed
-  #           address,uint24,int24,address,uint160,int24)
-  #         handler: handleInitialize
+  - kind: ethereum/contract
+    name: PoolManager
+    network: base
+    source:
+      abi: PoolManager
+      address: "0x498581ff718922c3f8e6a244956af099b2652b2b"
+      startBlock: 25350988
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      file: ./src/mappings/index.ts
+      entities:
+        - Pool
+        - Token
+      abis:
+        - name: ERC20
+          file: ./abis/ERC20.json
+        - name: ERC20SymbolBytes
+          file: ./abis/ERC20SymbolBytes.json
+        - name: ERC20NameBytes
+          file: ./abis/ERC20NameBytes.json
+        - name: PoolManager
+          file: ./abis/PoolManager.json
+      eventHandlers:
+        - event: Initialize(indexed bytes32,indexed address,indexed
+            address,uint24,int24,address,uint160,int24)
+          handler: handleInitialize
   #       - event: ModifyLiquidity(indexed bytes32,indexed
   #           address,int24,int24,int256,bytes32)
   #         handler: handleModifyLiquidity
