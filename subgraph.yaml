@@ -9,11 +9,11 @@ features:
 dataSources:
   - kind: ethereum/contract
     name: PoolManager
-    network: optimism
+    network: unichain
     source:
       abi: PoolManager
-      address: "0x9a13F98Cb987694C9F086b1F5eB990EeA8264Ec3"
-      startBlock: 130947675
+      address: "0x1f98400000000000000000000000000000000004"
+      startBlock: 8200000
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -43,11 +43,11 @@ dataSources:
   #         handler: handleSwap
   - kind: ethereum/contract
     name: PositionManager
-    network: optimism
+    network: unichain
     source:
       abi: PositionManager
-      address: "0x3C3Ea4B57a46241e54610e5f022E5c45859A1017"
-      startBlock: 130947681
+      address: "0x4529a01c7a0410167c5740c487a8de60232617bf"
+      startBlock: 8200000
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
