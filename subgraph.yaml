@@ -13,7 +13,7 @@ dataSources:
     source:
       abi: PoolManager
       address: "0x1f98400000000000000000000000000000000004"
-      startBlock: 6819670 # 25500
+      startBlock: 6819679
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -47,7 +47,7 @@ dataSources:
     source:
       abi: PositionManager
       address: "0x4529a01c7a0410167c5740c487a8de60232617bf"
-      startBlock: 6819670
+      startBlock: 6819679
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
